@@ -2,6 +2,6 @@ pipeline:
   do-nothing:
     image: bash
     commands:
-      - bash -c "echo Nothing to do!"
+      - bashsfs -c "echo Nothing to do!"
     when:
       event: [tag]
