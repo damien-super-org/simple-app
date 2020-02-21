@@ -2,6 +2,7 @@ pipeline:
   do-nothing:
     image: bash
     commands:
+      - bash sleep 10s
       - bash -c "echo Nothing to do!"
     when:
       event: [tag]
